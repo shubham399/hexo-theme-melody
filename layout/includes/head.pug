@@ -1,5 +1,5 @@
 meta(name="format-detection" content="telephone=no")
-meta(http-equiv="x-dns-prefetch-control" content="on") 
+meta(http-equiv="x-dns-prefetch-control" content="on")
 link(rel="dns-prefetch" href="https://cdn.jsdelivr.net")
 
 if theme.algolia_search.enable
@@ -25,13 +25,13 @@ if (theme.pwa && theme.pwa.enable)
 
 if (theme.pwa && theme.pwa.enable)
   link(rel="manifest" href=theme.pwa.manifest)
-  if(theme.pwa.theme_color) 
+  if(theme.pwa.theme_color)
     meta(name="theme-color" content=theme.pwa.theme_color)
-  if(theme.pwa.theme_color) 
+  if(theme.pwa.theme_color)
     meta(name="msapplication-TileColor" content=theme.pwa.theme_color)
-  if(theme.pwa.apple_touch_icon) 
+  if(theme.pwa.apple_touch_icon)
     link(rel="apple-touch-icon" sizes="180x180" href=theme.pwa.apple_touch_icon)
-  if(theme.pwa.favicon_32_32) 
+  if(theme.pwa.favicon_32_32)
     link(rel="icon" type="image/png" sizes="32x32" href=theme.pwa.favicon_32_32)
   if(theme.pwa.favicon_16_16)
     link(rel="icon" type="image/png" sizes="16x16" href=theme.pwa.favicon_16_16)
@@ -39,7 +39,7 @@ if (theme.pwa && theme.pwa.enable)
     link(rel="mask-icon" href=theme.pwa.mask_icon color=theme.pwa.theme_color)
 
 if (theme.google_adsense && theme.google_adsense.enable)
-  script(async, defer,async src=theme.google_adsense.js)
+  script(async, defer, src=theme.google_adsense.js)
   script.
     (adsbygoogle = window.adsbygoogle || []).push({
       google_ad_client: '!{theme.google_adsense.client}',
@@ -53,7 +53,7 @@ if theme.baidu_analytics
     (function() {
       var hm = document.createElement("script");
       hm.src = "https://hm.baidu.com/hm.js?!{theme.baidu_analytics}";
-      var s = document.getElementsByTagName("script")[0]; 
+      var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
 if theme.google_analytics
@@ -67,7 +67,7 @@ if theme.google_analytics
     ga('create', '!{theme.google_analytics}', 'auto');
     ga('send', 'pageview');
 if theme.google_analytics_MeasurementID
-  script(async, defer,async, src=`https://www.googletagmanager.com/gtag/js?id=${theme.google_analytics_MeasurementID}`)
+  script(async, defer, src=`https://www.googletagmanager.com/gtag/js?id=${theme.google_analytics_MeasurementID}`)
   script.
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
