@@ -1,4 +1,4 @@
-script(type="text/x-mathjax-config").
+script(async, defer,type="text/x-mathjax-config").
   MathJax.Hub.Config({
     tex2jax: {
       inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
@@ -16,7 +16,7 @@ script(type="text/x-mathjax-config").
     }
   });
 
-script(type="text/x-mathjax-config").
+script(async, defer,type="text/x-mathjax-config").
   MathJax.Hub.Queue(function() {
     var all = MathJax.Hub.getAllJax(), i;
     for (i=0; i < all.length; i += 1) {
@@ -24,4 +24,4 @@ script(type="text/x-mathjax-config").
     }
   });
 
-script(src=theme.mathjax.cdn)
+script(async, defer,src=theme.mathjax.cdn)

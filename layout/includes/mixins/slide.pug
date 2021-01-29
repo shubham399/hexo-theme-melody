@@ -13,7 +13,7 @@ mixin slide(item)
     data-separator=slide.separator || defaultSlide.separator
     data-separator-vertical=slide.separator_vertical || defaultSlide.separator_vertical
     data-charset=slide.charset || defaultSlide.charset)
-      script(type="text/template")!= item._content
+      script(async, defer,type="text/template")!= item._content
 
 mixin slideIframe(url)
   .content

@@ -56,10 +56,10 @@ html(lang=config.language)
     i.fa.fa-arrow-up#go-up(aria-hidden="true")
     each item in theme.cdn.js
       if item !== undefined
-        script(src=url_for(item))
+        script(async, defer,src=url_for(item))
     if theme.scripts !== undefined && theme.scripts.length > 0
       //- scripts list from config.yml
       each url in theme.scripts
-        script(src=url_for(url) + '?version=' + version())
+        script(async, defer,src=url_for(url) + '?version=' + version())
     include ./additional-js.pug
     include ./search/index.pug

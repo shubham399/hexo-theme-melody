@@ -1,9 +1,9 @@
 if theme.vssue && theme.vssue.enable
   #vssue-container
   link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vssue@1.4.6/dist/vssue.css")
-  script(src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js")
+  script(async, defer,src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js")
   - var platform = theme.vssue.platform || 'github'
-  script(src="https://cdn.jsdelivr.net/npm/vssue@1.4.6/dist/vssue." + platform + ".min.js")
+  script(async, defer,src="https://cdn.jsdelivr.net/npm/vssue@1.4.6/dist/vssue." + platform + ".min.js")
   //- Used for scripts
   - var perPage = theme.vssue.perPage || 10
   - var autoCreateIssue = theme.vssue.autoCreateIssue || false
